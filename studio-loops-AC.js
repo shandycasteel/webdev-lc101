@@ -8,15 +8,19 @@ let dessertOptions = ['apple', 'banana', 'more kale','ice cream', 'chocolate', '
 
 //Part A #2: Construct a for loop that assembles a meal for each of 6 astronauts.
 
+let pantry = [];
+
+pantry.push(proteinOptions, grainOptions, vegetableOptions, beverageOptions, dessertOptions);
+
 let meal = [];
 
 for (i = 0; i < 6; i++) {
   meal[i] = [
-    proteinOptions[i],
-    grainOptions[i],
-    vegetableOptions[i],
-    beverageOptions[i],
-    dessertOptions[i]
+    pantry[0][i],
+    pantry[1][i],
+    pantry[2][i],
+    pantry[3][i],
+    pantry[4][i]
   ];
 }
 
