@@ -24,10 +24,13 @@ for (i = 0; i < 6; i++) {
   ];
 }
 
+console.log("Here are the meal options:");
+
 for (i = 0; i < meal.length; i++) {
-  console.log(meal[i]);
-  console.log("-----");
+  console.log(`${i+1}. ${meal[i].join(', ')}`);
 }
+
+console.log("-----");
 
 
 //Part C #5: Using a while loop, ask the user to select the number of meals to assemble.  Validate the input to make sure it is an integer from 1 - 6.
@@ -44,6 +47,9 @@ while (numberOfMeals < 1 || numberOfMeals > 6) {
 
 for (i = 0; i < numberOfMeals; i++) {
   console.log(meal[i]);
+  if (meal[i].includes('kale')) {
+    console.log("Don’t worry, you can have double chocolate tomorrow.");
+  }
 }
 
 
