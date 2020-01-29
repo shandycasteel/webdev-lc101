@@ -53,8 +53,6 @@ for (i = 0; i < numberOfMeals; i++) {
 }
 
 
-
-
 //Skill boosts: 
 // a. Use string formatting to print something more interesting than “[‘chicken’, ‘rice’, ‘peas’, ‘juice’, ‘apple’]” for the meal outputs.
 // b. Use an “array of arrays” to store the food options in a ‘pantry’.
